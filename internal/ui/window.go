@@ -26,7 +26,10 @@ type MainWindow struct {
 // Run 运行应用
 func Run(appCtrl *appPkg.App) {
 	a := app.New()
+	a.SetIcon(resourceIcon128Png) // 设置应用图标
+	
 	w := a.NewWindow("游戏手柄按键映射工具")
+	w.SetIcon(resourceIcon128Png) // 设置窗口图标
 	w.Resize(fyne.NewSize(500, 400))
 
 	// 加载配置

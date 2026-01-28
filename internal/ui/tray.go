@@ -38,6 +38,9 @@ func (t *Tray) setup() {
 		return
 	}
 
+	// 设置托盘图标
+	desk.SetSystemTrayIcon(resourceIcon128Png)
+
 	// 创建菜单项
 	t.startItem = fyne.NewMenuItem("启动", t.onStart)
 	t.stopItem = fyne.NewMenuItem("停止", t.onStop)

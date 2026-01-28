@@ -1,0 +1,40 @@
+# Go compiled binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go workspace
+go.work
+go.work.sum
+
+# Dependency directories
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Application config (user-specific)
+config.json
+
+# Build artifacts
+GamepadKeyMapper.exe
+*.ico
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
